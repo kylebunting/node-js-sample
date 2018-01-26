@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  node-js-sample:
+    image: node-js-sample
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 5000:5000
